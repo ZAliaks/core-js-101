@@ -467,15 +467,16 @@ function getIdentityMatrix(/* n */) {
  *     0, 100 => [ 0, 1, 2, ..., 100 ]
  *     3, 3   => [ 3 ]
  */
-function getIntervalArray(start, end) {
-  const createFullArr = function () {
-    const len = end - start + 1;
-    // eslint-disable-next-line prefer-spread
-    return Array.apply(null, { length: len });
-};
+function getIntervalArray(/* start, end */) {
+//   const createFullArr = function () {
+//     const len = end - start + 1;
+//     // eslint-disable-next-line prefer-spread
+//     return Array.apply(null, { length: len });
+// };
 
-  return createFullArr().map((_item, index) => index + start);
+  //   return createFullArr().map((_item, index) => index + start);
   // return Array.from({ length: start + end }, (v, k) => start + k);
+  throw new Error('Not implemented');
 }
 
 /**
